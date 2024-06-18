@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Volume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Volume</h1>
+        <div class="input-container">
+            <label for="quantidade">Quantidade Total:</label>
+            <input type="number" id="quantidade" min="1" required>
+        </div>
+        <div class="input-container">
+            <label for="espessura">Espessura (mm):</label>
+            <input type="number" id="espessura" min="1" required>
+        </div>
+        <div class="input-container">
+            <label for="comprimento">Comprimento (m):</label>
+            <input type="number" id="comprimento" min="0.01" step="0.01" required>
+        </div>
+        <div class="input-container">
+            <label for="largura">Largura (m):</label>
+            <input type="number" id="largura" min="0.01" step="0.01" required>
+        </div>
+        <button onclick="calcularVolume()">Calcular</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
